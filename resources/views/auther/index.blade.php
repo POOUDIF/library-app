@@ -4,10 +4,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <h2 class="admin-heading">All Authors</h2>
+                    <h2 class="admin-heading">Data Penulis</h2>
                 </div>
                 <div class="offset-md-7 col-md-2">
-                    <a class="add-new" href="{{ route('authors.create') }}">Add Author</a>
+                    <a class="add-new" href="{{ route('authors.create') }}">Add Data</a>
                 </div>
             </div>
             <div class="row">
@@ -15,8 +15,8 @@
                     <div class="message"></div>
                     <table class="content-table">
                         <thead>
-                            <th>S.No</th>
-                            <th>Author Name</th>
+                            <th>No</th>
+                            <th>Nama Penulis</th>
                             <th>Edit</th>
                             <th>Delete</th>
                         </thead>
@@ -38,7 +38,7 @@
                                 </tr>
                             @empty
                                 <tr>
-                                    <td colspan="4">No Authors Found</td>
+                                    <td colspan="4">Penulis Tidak Ditemukan</td>
                                 </tr>
                             @endforelse
                         </tbody>

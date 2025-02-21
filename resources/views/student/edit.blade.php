@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <h2 class="admin-heading">Update Student</h2>
+                    <h2 class="admin-heading">Update Siswa</h2>
                 </div>
             </div>
             <div class="row">
@@ -13,7 +13,7 @@
                         autocomplete="off">
                         @csrf
                         <div class="form-group">
-                            <label>Student Name</label>
+                            <label>Nama Siswa</label>
                             <input type="text" class="form-control" placeholder="Student Name" name="name"
                                 value="{{ $student->name }}" required>
                             @error('name')
@@ -23,7 +23,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label>Address</label>
+                            <label>Alamat</label>
                             <input type="text" class="form-control" placeholder="Address" name="address"
                                 value="{{ $student->address }}" required>
                             @error('address')
@@ -48,7 +48,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label>Class</label>
+                            <label>Kelas</label>
                             <input type="text" class="form-control" placeholder="Class" name="class"
                                 value="{{ $student->class }}" required>
                             @error('class')
@@ -58,7 +58,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label>Age</label>
+                            <label>Umur</label>
                             <input type="number" class="form-control" placeholder="Age" name="age"
                                 value="{{ $student->age }}" required>
                             @error('age')

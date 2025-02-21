@@ -1,0 +1,20 @@
+runtime: php82
+env: flex
+
+runtime_config:
+  document_root: public
+
+beta_settings:
+  cloud_sql_instances: library-app-451408:asia-southeast2:library-app
+
+env_variables:
+  APP_ENV: production
+  APP_KEY: base64:PJ4fkKyLpppmN+K1CiAjNQXXYxbJ1Ss+3qpXxx8uYVY=
+  APP_DEBUG: false
+  LOG_CHANNEL: stderr
+
+  DB_CONNECTION: mysql
+  DB_SOCKET: /cloudsql/library-app-451408:asia-southeast2:library-app
+  DB_DATABASE: library-app
+  DB_USERNAME: root
+  DB_PASSWORD: password

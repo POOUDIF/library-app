@@ -29,7 +29,8 @@
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="{{ route('change_password') }}">Change Password</a>
-                            <a class="dropdown-item" href="#" onclick="document.getElementById('logoutForm').submit()">Log Out</a>
+                            <a class="dropdown-item" href="#"
+                                onclick="document.getElementById('logoutForm').submit()">Log Out</a>
                         </div>
                         <form method="post" id="logoutForm" action="{{ route('logout') }}">
                             @csrf
@@ -46,13 +47,13 @@
                 <div class="col-md-12">
                     <ul class="menu">
                         <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                        <li><a href="{{ route('authors') }}">Authors</a></li>
-                        <li><a href="{{ route('publishers') }}">Publishers</a></li>
-                        <li><a href="{{ route('categories') }}">Categories</a></li>
-                        <li><a href="{{ route('books') }}">Books</a></li>
-                        <li><a href="{{ route('students') }}">Reg Students</a></li>
-                        <li><a href="{{ route('book_issued') }}">Book Issue</a></li>
-                        <li><a href="{{ route('reports') }}">Reports</a></li>
+                        <li><a href="{{ route('authors') }}">Penulis</a></li>
+                        <li><a href="{{ route('publishers') }}">Penerbit</a></li>
+                        <li><a href="{{ route('categories') }}">Kategori</a></li>
+                        <li><a href="{{ route('books') }}">Buku</a></li>
+                        <li><a href="{{ route('students') }}">Daftar Siswa</a></li>
+                        <li><a href="{{ route('book_issued') }}">Data Pinjaman</a></li>
+                        <li><a href="{{ route('reports') }}">Laporan</a></li>
                         <li><a href="{{ route('settings') }}">Settings</a></li>
                     </ul>
                 </div>
@@ -67,7 +68,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <span>© Copyright {{ now()->format("Y") }} <a href="https://www.yahoobaba.net">YahooBaba 😎</a></span>
+                    <span>© Copyright {{ now()->format('Y') }} E-Library || All Rights Reserve</span>
                 </div>
             </div>
         </div>

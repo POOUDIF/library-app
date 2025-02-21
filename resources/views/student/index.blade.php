@@ -15,8 +15,8 @@
                     <div class="message"></div>
                     <table class="content-table">
                         <thead>
-                            <th>S.No</th>
-                            <th>Student Name</th>
+                            <th>No</th>
+                            <th>Nama Siswa</th>
                             <th>Gender</th>
                             <th>Phone</th>
                             <th>Email</th>
@@ -73,12 +73,19 @@
         $(".view-btn").on("click", function() {
             var student_id = $(this).data("sid");
             $.ajax({
-                url: "http://127.0.0.1:8000/student/show/"+student_id,
+                url: "http://127.0.0.1:8000/student/show/" + student_id,
                 type: "get",
                 success: function(student) {
                     console.log(student);
-                    form ="<tr><td>Student Name :</td><td><b>"+student['name']+"</b></td></tr><tr><td>Address :</td><td><b>"+student['address']+"</b></td></tr><tr><td>Gender :</td><td><b>"+ student['gender']+ "</b></td></tr><tr><td>Class :</td><td><b>"+ student['class']+ "</b></td></tr><tr><td>Age :</td><td><b>"+ student['age']+ "</b></td></tr><tr><td>Phone :</td><td><b>"+ student['phone']+ "</b></td></tr><tr><td>Email :</td><td><b>"+ student['email']+ "</b></td></tr>";
-          console.log(form);
+                    form = "<tr><td>Student Name :</td><td><b>" + student['name'] +
+                        "</b></td></tr><tr><td>Address :</td><td><b>" + student['address'] +
+                        "</b></td></tr><tr><td>Gender :</td><td><b>" + student['gender'] +
+                        "</b></td></tr><tr><td>Class :</td><td><b>" + student['class'] +
+                        "</b></td></tr><tr><td>Age :</td><td><b>" + student['age'] +
+                        "</b></td></tr><tr><td>Phone :</td><td><b>" + student['phone'] +
+                        "</b></td></tr><tr><td>Email :</td><td><b>" + student['email'] +
+                        "</b></td></tr>";
+                    console.log(form);
 
                     $("#modal-form table").html(form);
                     $("#modal").show();

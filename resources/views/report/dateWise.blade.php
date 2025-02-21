@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="offset-md-3 col-md-6">
-                    <h2 class="admin-heading text-center">Date Wise Book Issue Report</h2>
+                    <h2 class="admin-heading text-center">Laporan Tanggal Peminjaman Buku</h2>
                 </div>
             </div>
             <div class="row">
@@ -28,12 +28,12 @@
                     <div class="col-md-12">
                         <table class="content-table">
                             <thead>
-                                <th>S.No</th>
-                                <th>Student Name</th>
-                                <th>Book Name</th>
+                                <th>No</th>
+                                <th>Nama Siswa</th>
+                                <th>Nama Buku</th>
                                 <th>Phone</th>
                                 <th>Email</th>
-                                <th>Issue Date</th>
+                                <th>Tanggal Peminjaman</th>
                             </thead>
                             <tbody>
                                 @forelse ($books as $book)
@@ -54,7 +54,7 @@
                         </table>
                     </div>
                 </div>
-        @endif
-    </div>
+            @endif
+        </div>
     </div>
 @endsection

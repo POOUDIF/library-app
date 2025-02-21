@@ -5,7 +5,7 @@
 ## Quick Start 
 clone the repo
 ```
-    git clone https://github.com/POOUDIF/library-app/tree/main
+    git clone https://github.com/POOUDIF/library-app.git
 ```
 
 change current directory
